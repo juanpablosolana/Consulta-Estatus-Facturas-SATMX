@@ -30,7 +30,7 @@ app.get("/:re&&:rr&&:tt&&:id", (request, res) => {
   const data = async () => {
     const { response } = await soapRequest({ url: url, headers: sampleHeaders, xml: xml });
     const { body } = response;
-    res.send(convert.xml2json(body, { compact: false, spaces: 4 }))
+    res.send(convert.xml2json(body, { compact: true, spaces: 4 }))
   }
   data()
 })
