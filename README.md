@@ -14,10 +14,10 @@ La url recibe 4 parametros  **RFC Emisor, RFC Receptor, Monto TOTAL y el UUID** 
 _una URL valida es_
 
 ```
-Da un ejemplo
+/RFCEmisor&&RFCReceptor&&MontoTotalConCentavos&&UUID
 ```
 
-### Instalación 🔧
+### Ejemplos de consumo 🔧
 
 _ /RFCEmisor&&RFCReceptor&&MontoTotalConCentavos&&UUID_
 
