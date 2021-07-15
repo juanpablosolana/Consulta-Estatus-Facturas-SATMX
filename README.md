@@ -4,7 +4,7 @@ API que permite conocer el estaus fiscal de los CFDI del SATMX
 
 ## Comenzando 🚀
 
-_El uso de la API es el siguiente:._
+El uso de la API es el siguiente:.
 
 La url recibe 4 parametros  **RFC Emisor, RFC Receptor, Monto TOTAL y el UUID** con && estre ellos
 
@@ -19,7 +19,7 @@ _una URL valida es_
 
 ### Ejemplos de consumo 🔧
 
-_ /RFCEmisor&&RFCReceptor&&MontoTotalConCentavos&&UUID_
+ /RFCEmisor&&RFCReceptor&&MontoTotalConCentavos&&UUID
 
 _algo así_
 
@@ -28,13 +28,13 @@ _algo así_
 ```
 
 
-_Recibes un JSON con el estaus de los datos_
+_Recibes un JSON con el estatus de los datos_
 
 ## Como funciona⚙️
 
 _Se crea una petición al SOAPEnv del SAT_
 
-### El SOPA necesita un xml con los datos a validar 🔩
+### El SOAP necesita un xml con los datos a validar 🔩
 
 _ La constante xml simula el contenido del archivo con los parametros obtenidos de la url_
 
@@ -65,6 +65,4 @@ _Acá el listado de paquetes _
 
 
 ---
-⌨️ con ❤️ por [Lo programamos](https://loprogramamos.com) 😊
-
-
+⌨ con ❤️ por Pablo Solana para [Lo programamos](https://loprogramamos.com) 😊
