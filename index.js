@@ -9,7 +9,11 @@ app.use(express.json())
 
 
 app.get("/:re&&:rr&&:tt&&:id", (request, res) => {
-  const { re, rr, tt, id } = request.params
+  let { re, rr, tt, id } = request.params
+  re=re.replace(/&/gi, '&amp;')
+  rr=rr.replace(/&/gi, '&amp;')
+  console.log(re, rr, tt, id)
+
   const url = 'https://consultaqr.facturaelectronica.sat.gob.mx/ConsultaCFDIService.svc';
   const sampleHeaders = {
     'user-agent': 'sampleTest',
@@ -21,7 +25,7 @@ app.get("/:re&&:rr&&:tt&&:id", (request, res) => {
      <soapenv:Body>
         <tem:Consulta>
            <!--Optional:-->
-           <tem:expresionImpresa><![CDATA[?re=${re}&rr=${rr}&tt=${tt}&id=${id}]]>
+           <tem:expresionImpresa><![CDATA[?re=${re}?rr=${rr}?tt=${tt}?id=${id}]]>
            </tem:expresionImpresa>
         </tem:Consulta>
      </soapenv:Body>
